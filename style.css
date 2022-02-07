@@ -1,59 +1,76 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Handlee&family=Roboto:wght@100&display=swap");
+@import "./Components/base.css";
+@import "./Components/utility.css";
 
 * {
-  box-sizing: inherit;
+  /*box-sizing: inherit;*/
+  box-sizing: border-box;
 }
+html {
+  font-size: 150%;
+}
+
 body {
   background-color: #eee;
   margin: 0 auto;
   padding: 0;
-  flex-direction: row;
+  display: flex;
   flex-wrap: wrap;
   line-height: 1, 5;
 }
+
 h1 {
   text-align: center;
   color: #026;
   font-family: "Dancing Script", cursive;
   font-weight: 900;
 }
+
 h2 {
   text-align: center;
   color: #026;
 }
-section {
-  background-color: aliceblue;
-  padding: 20px;
-  border: 1px solid rosybrown;
-  height: auto;
-  display: inline-block;
-  border-radius: 3px;
-  justify-content: center;
-  margin-bottom: 2rem;
-  box-shadow: 2px 2px 15px rgb(238, 173, 173);
+
+h2,
+h3 {
+  margin: 0;
 }
+
 nav {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   gap: 25px;
   padding: 0 7px;
   font-weight: 100;
   justify-content: center;
 }
+
 main {
   padding: 20px;
 }
+
+section {
+  background-color: aliceblue;
+  padding: 20px;
+  border: 1px solid rosybrown;
+  height: auto;
+  display: inline-block;
+  /*flex-direction: column;*/
+  border-radius: 3px;
+  justify-content: center;
+  margin-bottom: 2rem;
+  box-shadow: 2px 2px 15px rgb(238, 173, 173);
+}
+
 p {
   font-size: 1rem;
 }
-html {
-  font-size: 150%;
-}
+
 ul {
   padding: 10px;
   list-style-type: none;
 }
+
 li {
   background: url(/images/myLogo.png);
   background-size: 12%;
@@ -61,19 +78,47 @@ li {
   background-position: 1.5% center;
   padding: 2%;
   padding-left: 6%;
+  margin: 0;
 }
-li:hover {
-  background: rosybrown;
-}
+
 aside {
   color: red;
   text-align: right;
   font-style: italic;
   flex-wrap: wrap;
 }
+
+a:link,
+a:visited {
+  color: rgb(5, 50, 146);
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+}
+
 dt {
   text-transform: uppercase;
 }
+
+.logo {
+  padding: 5px;
+  width: 10%;
+  height: 10%;
+}
+
+.quote {
+  padding: 20px;
+}
+
+.line {
+  background-color: red;
+  height: 1px;
+  width: 25%;
+  border: 0;
+}
+
 .me {
   border-radius: 0 12% 0 12%;
   padding: 5px;
@@ -82,64 +127,65 @@ dt {
   max-width: 400px;
   margin: auto;
 }
-a:link,
-a:visited {
-  color: rgb(5, 50, 146);
-  text-decoration: none;
-}
-a:hover {
-  color: red;
-}
-footer {
-  padding: 20px;
-  margin: 0 auto;
-  text-align: center;
-  flex-wrap: wrap;
-}
+
 .about-me {
   float: left;
 }
+
 .name {
   float: right;
   padding: 10px;
 }
+
 .name2 {
   float: left;
   padding: 10px;
 }
-.copyright {
-  float: left;
-  padding-left: 4%;
-}
+
 .person {
   height: 1px;
   background-color: red;
   border: 0px;
   width: 90%;
 }
-.logo {
-  padding: 5px;
-  width: 10%;
-  height: 10%;
+
+.skills-style {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
+
+footer {
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.copyright {
+  float: left;
+  padding-left: 4%;
+}
+
 .vertical {
   border: 0.1px solid red;
   height: auto;
   width: 0px;
 }
-.quote {
-  padding: 20px;
-}
-.line {
-  background-color: red;
-  height: 1px;
-  width: 25%;
-  border: 0;
-}
-.privat {
+
+.photo-titel {
   text-align: center;
   font-size: 0.7rem;
 }
+
+.it-skills {
+  text-align: center;
+}
+
 .tab-width {
   width: 35%;
+}
+.to-fix {
+  display: flex;
+  flex-direction: column;
 }
