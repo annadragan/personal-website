@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #eee;
   margin: 0 auto;
@@ -5,6 +9,17 @@ body {
   display: flex;
   flex-wrap: wrap;
   line-height: 1, 5;
+}
+
+main {
+  padding: 20px;
+}
+
+h2,
+h3,
+h4 {
+  margin: 0;
+  color: midnightblue;
 }
 
 h1 {
@@ -19,6 +34,14 @@ h2 {
   color: #026;
 }
 
+html {
+  font-size: 150%;
+}
+
+p {
+  font-size: 1rem;
+}
+
 nav {
   display: flex;
   flex-wrap: wrap;
@@ -26,10 +49,6 @@ nav {
   padding: 0 7px;
   font-weight: 100;
   justify-content: center;
-}
-
-main {
-  padding: 20px;
 }
 
 section {
@@ -46,7 +65,7 @@ section {
 }
 
 ul {
-  padding: 10px;
+  /* padding: 10px; */
   list-style-type: none;
 }
 

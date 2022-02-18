@@ -1,0 +1,50 @@
+.logo {
+  padding: 5px;
+  width: 10%;
+  height: 10%;
+}
+
+.quote {
+  padding: 20px;
+}
+
+.line {
+  background-color: red;
+  height: 1px;
+  width: 25%;
+  border: 0;
+}
+
+.line-top-bottom {
+  height: 1px;
+  background-color: red;
+  border: 0px;
+  width: 90%;
+}
+
+.skills-style {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.copyright {
+  float: left;
+  padding-left: 4%;
+}
+
+.it-skills {
+  text-align: center;
+}
+
+.tab-width {
+  width: 35%;
+}
+.profile__informations {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon--color {
+  color: midnightblue;
+}

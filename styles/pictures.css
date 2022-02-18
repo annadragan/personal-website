@@ -1,0 +1,49 @@
+.picture {
+  border-radius: 0 12% 0 12%;
+  padding: 5px;
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+}
+
+.profile {
+  float: left;
+}
+
+.profile__photo {
+  float: right;
+  padding: 10px;
+}
+
+.picture-left {
+  float: left;
+  padding: 10px;
+}
+
+.profile__photo__titel {
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+/* .interests__pictures {
+  display: grid;
+  grid-template-columns: repeat(10, auto);
+  gap: 12px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  border-bottom: 1px solid #8a1515;
+}
+
+.intrests__pictures__carousel {
+  display: block;
+  position: relative;
+  height: 100px;
+  width: 100px;
+}
+
+.intrests__pictures-radius {
+  border-radius: 12px;
+} */
